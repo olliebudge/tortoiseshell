@@ -35,6 +35,9 @@ nav img {
     margin-left: 2rem;
     margin-right: 1rem;
 }
+.short-menu {
+    display: none;
+}
 ul {
     margin-right: 1rem;
 }
@@ -122,5 +125,64 @@ footer img {
     .main-banner h1{
         font-size: 1.33rem;
     }
+}
+@media only screen and (max-width: 560px) {
+    header {
+        height: 17rem;
+        background-position: 20%;
+    }
+    header div span {
+        display: none;
+    }
+    .menu ul {
+        display: none;
+    }
+    .menu ul.short-menu {
+        display: block;
+    }
 
+    .main-banner {
+        padding: 1rem 0;
+        margin: 9rem auto 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+    .main-banner h1 {
+        font-size: 1rem;
+    }
+    .supporting {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 3rem;
+    }
+    .service {
+        height: auto;
+        margin: 0.77rem;
+        font-size: 0.77rem;
+    }
+    .info {
+        width: auto;
+        margin-bottom: 4rem;
+    }
+    .info p{
+        padding-left: 0.5rem;
+    }
+    .title {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+    .title p {
+        font-size: 0.77rem;
+    }
+    footer {
+        justify-content: center;
+    }
+    footer div {
+        display: none;
+    }
+    footer img {
+
+    }
 }
